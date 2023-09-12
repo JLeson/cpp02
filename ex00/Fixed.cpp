@@ -6,7 +6,7 @@
 /*   By: fsarkoh <fsarkoh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 17:16:02 by fsarkoh           #+#    #+#             */
-/*   Updated: 2023/09/12 15:53:58 by fsarkoh          ###   ########.fr       */
+/*   Updated: 2023/09/12 16:34:12 by fsarkoh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ Fixed::~Fixed(void)
 
 void	Fixed::operator=(const Fixed &fixed)
 {
-	this->_bits = fixed._bits;
+	if (this != &fixed)
+		this->_bits = fixed._bits;
 	std::cout << "Copy assignment operator called" << std::endl;
 }
 
