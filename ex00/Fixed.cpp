@@ -6,7 +6,7 @@
 /*   By: fsarkoh <fsarkoh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 17:16:02 by fsarkoh           #+#    #+#             */
-/*   Updated: 2023/09/12 16:34:12 by fsarkoh          ###   ########.fr       */
+/*   Updated: 2023/09/12 16:40:29 by fsarkoh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Fixed::Fixed(void)
 	std::cout << "Default constructor called" << std::endl;
 }
 
-Fixed::Fixed(Fixed &fixed)
+Fixed::Fixed(const Fixed &fixed)
 {
 	this->_bits = fixed._bits;
 	std::cout << "Copy contructor called" << std::endl;
