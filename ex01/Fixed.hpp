@@ -6,7 +6,7 @@
 /*   By: fsarkoh <fsarkoh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 15:56:35 by fsarkoh           #+#    #+#             */
-/*   Updated: 2023/09/12 16:42:58 by fsarkoh          ###   ########.fr       */
+/*   Updated: 2023/09/13 13:35:40 by fsarkoh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,9 @@ public:
 	Fixed(const int value);
 	Fixed(const float value);
 	~Fixed();
+
 	void	operator=(const Fixed &fixed);
+
 	float	toFloat(void) const;
 	int		toInt(void) const;
 	int		getRawBits(void) const;
